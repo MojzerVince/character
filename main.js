@@ -69,4 +69,17 @@ DOM elemek módosítása
  - .innerText
  - .innerHTML
  - .className
-*/
+ - .<attribute> (attribútum nevét kell ide beírni)
+   .<attribute> .setAttribute(<attribute>, <value>)
+ - .style.<property>
+ */
+
+console.log("-----OTHERS")
+let others = document.querySelectorAll(".other");
+
+for (let other of others){
+    other.style.backgroundColor = "aqua";
+    other.style.color = "green";
+}
+
+console.log(others);
