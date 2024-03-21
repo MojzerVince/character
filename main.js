@@ -82,3 +82,29 @@ for (let other of others){
 }
 
 console.log(others);
+
+let as = document.querySelectorAll("a");
+for(let a of as){
+    a.setAttribute("href", "#");
+    a.setAttribute("target", "_blank");
+}
+
+let del = document.getElementById("delme");
+document.body.removeChild(del);
+
+let lista = document.querySelector(".lista");
+lista.removeChild(document.querySelector("#delme"));
+
+//lista.remove(); - teljes element törlés
+
+let p = document.createElement("p"); //elem létrehozás
+p.innerText = "NIGA NIGA NIGA NIGA NIGA     I'm 100% nigga"
+document.body.appendChild(p);
+
+let newli = document.createElement("li");
+newli.innerText = "Bananiga";
+lista.appendChild(newli);
+
+let newli2 = document.createElement("li");
+newli2.innerText = "Barackos Nigaszkos";
+lista.insertBefore(newli2, newli) //mit szúrok be, mi elé szúrom be
