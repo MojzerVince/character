@@ -1,0 +1,10 @@
+div{
+    border: 1px black solid;
+}
+
+.window{
+    display: grid;
+    
+    grid-template-columns: 40% 15% 30% 15%;
+    grid-template-rows: 100px 100px 100px 100px;
+}
