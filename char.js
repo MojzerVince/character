@@ -18,3 +18,7 @@ function armor4Click(item){
     let armor4 = document.querySelector("#armor4");
     armor4.setAttribute("src", itemSRC);
 }
+
+function noArmor(item){
+    item.removeAttribute("src");
+}
