@@ -1,4 +1,4 @@
-//alert("NIGA!");
+//alert("NIGA!"); //értesítés
 
 //DOM - Documentum Object Model, memóriában építi fel a weboldalt
 
@@ -44,7 +44,6 @@ console.log("-----for in");
 for(let item in divs){
     console.log(item);
 }
-
 
 console.log("-----QUERY SELECTOR")
 //úgy működik mint a css, css szelektort kell megadni
