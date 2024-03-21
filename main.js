@@ -56,3 +56,17 @@ console.log(tag);
 console.log("-----QUERY SELECTOR ALL")
 let tags = document.querySelectorAll(".checked");
 console.log(tags);
+
+/*
+DOM elemek elérése
+ - document.getElementBy
+ - document.getElementByClassName
+ - document.getElementByTagName
+
+ - document.querySelector[All]
+
+DOM elemek módosítása
+ - .innerText
+ - .innerHTML
+ - .className
+*/
