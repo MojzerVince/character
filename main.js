@@ -108,3 +108,11 @@ lista.appendChild(newli);
 let newli2 = document.createElement("li");
 newli2.innerText = "Barackos Nigaszkos";
 lista.insertBefore(newli2, newli) //mit szúrok be, mi elé szúrom be
+
+let qlista = document.querySelector(".lista");
+qlista.style.color = "lime";
+
+let qlistas = document.querySelectorAll(".lista");
+for(let lista of qlistas){ //mivel ez egy tömb, nem lehet egyszerre az összeset átszínezni, ezért kell végigmenni rajta
+    lista.style.backgroundColor = "grey";
+}
