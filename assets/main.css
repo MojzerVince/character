@@ -1,10 +1,97 @@
 div{
-    border: 1px black solid;
+    border: 3px black solid;
+}
+img{
+    border: 1px red solid;
 }
 
 .window{
     display: grid;
-    
-    grid-template-columns: 40% 15% 30% 15%;
-    grid-template-rows: 100px 100px 100px 100px;
+
+    grid-template-columns: 40% 13% 30% 13%;
+    grid-template-rows: 200px 200px 200px 200px;
+
+    grid-template-areas: 
+    "flex1 armor1 nothing weapon1"
+    "flex2 armor2 nothing noweapon"
+    "flex3 armor3 nothing noweapon"
+    "flex4 armor4 nothing weapon2";
+
+    gap: 20px;
+}
+
+.flex1{
+    grid-area: flex1;
+
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0px 10px;
+    flex-wrap: nowrap;
+
+    background-color: rgb(230, 230, 230);
+}
+.flex2{
+    grid-area: flex2;
+
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0px 10px;
+    flex-wrap: nowrap;
+
+    background-color: rgb(230, 230, 230);
+}
+.flex3{
+    grid-area: flex3;
+
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0px 10px;
+    flex-wrap: nowrap;
+
+    background-color: rgb(230, 230, 230);
+}
+.flex4{
+    grid-area: flex4;
+
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0px 10px;
+    flex-wrap: nowrap;
+
+    background-color: rgb(230, 230, 230);
+}
+
+.armor1{
+    grid-area: armor1;
+    background-color: rgb(209, 209, 209);
+}
+.armor2{
+    grid-area: armor2;
+    background-color: rgb(209, 209, 209);
+}
+.armor3{
+    grid-area: armor3;
+    background-color: rgb(209, 209, 209);
+}
+.armor4{
+    grid-area: armor4;
+    background-color: rgb(209, 209, 209);
+}
+
+.nothing{
+    grid-area: nothing;
+    background-color: grey;
+}
+
+.weapon1{
+    grid-area: weapon1;
+    background-color: rgb(209, 209, 209);
+}
+.noweapon{
+    grid-area: noweapon;
+    display: none;
+}
+.weapon2{
+    grid-area: weapon2;
+    background-color: rgb(209, 209, 209);
 }
