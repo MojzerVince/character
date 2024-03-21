@@ -9,8 +9,8 @@ let f_div = document.getElementById("first")
 //console.log - kiíratás a konzolra
 console.log(f_div.className)
 f_div.className = "";
-f_div.innerText = "<a>trapista</a>"; //szövegként kezeli és bennehagyja a tageket
-//f_div.innerHTML = "<a>NIGA BUY</a>"; //html kódból kiveszi a szöveget
+//f_div.innerText = "<a>trapista</a>"; //szövegként kezeli és bennehagyja a tageket
+f_div.innerHTML = "<a>NIGA BUY</a>"; //html kódból kiveszi a szöveget
 console.log(f_div.className)
 
 //let divs = document.getElementsByClassName("text"); //collection-t ad vissza, olyan mint a tömb
@@ -44,3 +44,15 @@ console.log("-----for in");
 for(let item in divs){
     console.log(item);
 }
+
+
+console.log("-----QUERY SELECTOR")
+//úgy működik mint a css, css szelektort kell megadni
+//let tag = document.querySelector("html body div a");
+let tag = document.querySelector("#second"); //id alapján is szelektálhatunk
+tag.innerHTML = "NIGAAA";
+console.log(tag);
+
+console.log("-----QUERY SELECTOR ALL")
+let tags = document.querySelectorAll(".checked");
+console.log(tags);
