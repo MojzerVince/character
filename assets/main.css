@@ -42,8 +42,14 @@
     border-left: solid 2px black;
 }
 
+.window>div.nothing{
+    grid-area: nothing;
+    background-color: black;
+    border-radius: 3px;
+}
+
 div>img:hover{
-    /*box-shadow: 1px 1px 5px 2px rgba(255, 255, 255, 0.65);*/
+    /*box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.65);*/
     filter: drop-shadow(5px 5px 5px black); /*képekre szűrő*/
 }
 
@@ -103,12 +109,6 @@ div>img:hover{
 .armor4{
     grid-area: armor4;
     background-color: rgb(209, 209, 209);
-}
-
-.nothing{
-    grid-area: nothing;
-    background-color: black;
-    border-radius: 3px;
 }
 
 .weapon1{
