@@ -5,6 +5,14 @@
     background-color: rgb(151, 126, 95);
 }*/
 
+*{
+    user-select: none;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+
 .window{
     display: grid;
 
@@ -51,6 +59,7 @@
 div>img:hover{
     /*box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.65);*/
     filter: drop-shadow(5px 5px 5px black); /*képekre szűrő*/
+    transition: linear 0.05s;
 }
 
 .flex1{
