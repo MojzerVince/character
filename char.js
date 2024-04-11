@@ -55,82 +55,67 @@ const headList = [
 const chestList = [
     {
         name: "Chain Chest",
-        img: "assets/imgs/h_c.png",
-        equipped: false
+        img: "assets/imgs/c_c.png",
     },
     {
         name: "Leather Chest",
         img: "assets/imgs/c_l.png",
-        equipped: false
     },
     {
         name: "Gold Chest",
         img: "assets/imgs/c_g.png",
-        equipped: false
     },
     {
         name: "Iron Chest",
         img: "assets/imgs/c_i.png",
-        equipped: false
     },
     {
         name: "Diamond Chest",
         img: "assets/imgs/c_d.png",
-        equipped: false
     },
 ];
 const trousList = [
     {
         name: "Chain Trouser",
         img: "assets/imgs/t_c.png",
-        equipped: false
     },
     {
         name: "Leather Trouser",
         img: "assets/imgs/t_l.png",
-        equipped: false
     },
     {
         name: "Gold Trouser",
         img: "assets/imgs/t_g.png",
-        equipped: false
     },
     {
         name: "Iron Trouser",
         img: "assets/imgs/t_i.png",
-        equipped: false
     },
     {
         name: "Diamond Trouser",
         img: "assets/imgs/t_d.png",
-        equipped: false
     },
 ];
 const bootList = [
     {
         name: "Chain Boots",
         img: "assets/imgs/s_c.png",
-        equipped: false
     },
     {
         name: "Leather Boots",
         img: "assets/imgs/s_l.png",
-        equipped: false
     },
     {
         name: "Gold Boots",
         img: "assets/imgs/s_g.png",
-        equipped: false
     },
     {
         name: "Iron Boots",
         img: "assets/imgs/s_i.png",
-        equipped: false
     },
     {
         name: "Diamond Boots",
         img: "assets/imgs/s_d.png",
-        equipped: false
     },
 ];
 
@@ -141,6 +126,9 @@ window.onload = (event) => {
     console.log("Niga loaded");
 
     let head = document.querySelector(".flex1");
+    let headC = document.querySelector(".armor1");
+    let headIMG = document.createElement("img");
+    headC.appendChild(headIMG);
     
     for(let i = 0; i< headList.length; i++){
         let img = document.createElement("img");
@@ -148,13 +136,21 @@ window.onload = (event) => {
         img.alt = headList[i].name;
         img.draggable = false;
         img.onclick = (event) => {
+            headC.removeChild(headIMG);
             console.log("img clicked - " + img.alt);
-            armor1Click(img);
+            //armor1Click(img);
+            headIMG.src = img.src;
+            headIMG.alt = img.alt;
+            headIMG.draggable = false;
+            headC.appendChild(headIMG);
         };
         head.appendChild(img);
     }
     //---------------
     let chest = document.querySelector(".flex2");
+    let chestC = document.querySelector(".armor2");
+    let chestIMG = document.createElement("img");
+    chestC.appendChild(chestIMG);
     
     for(let i = 0; i< chestList.length; i++){
         let img = document.createElement("img");
@@ -162,13 +158,21 @@ window.onload = (event) => {
         img.alt = chestList[i].name;
         img.draggable = false;
         img.onclick = (event) => {
+            chestC.removeChild(chestIMG);
             console.log("img clicked - " + img.alt);
-            armor2Click(img);
+            //armor2Click(img);
+            chestIMG.src = img.src;
+            chestIMG.alt = img.alt;
+            chestIMG.draggable = false;
+            chestC.appendChild(chestIMG);
         };
         chest.appendChild(img);
     }
     //---------------
     let trous = document.querySelector(".flex3");
+    let trousC = document.querySelector(".armor3");
+    let trousIMG = document.createElement("img");
+    trousC.appendChild(trousIMG);
     
     for(let i = 0; i< trousList.length; i++){
         let img = document.createElement("img");
@@ -176,13 +180,21 @@ window.onload = (event) => {
         img.alt = trousList[i].name;
         img.draggable = false;
         img.onclick = (event) => {
+            trousC.removeChild(trousIMG);
             console.log("img clicked - " + img.alt);
-            armor3Click(img);
+            //armor3Click(img);
+            trousIMG.src = img.src;
+            trousIMG.alt = img.alt;
+            trousIMG.draggable = false;
+            trousC.appendChild(trousIMG);
         };
         trous.appendChild(img);
     }
     //---------------
     let boot = document.querySelector(".flex4");
+    let bootC = document.querySelector(".armor4");
+    let bootIMG = document.createElement("img");
+    bootC.appendChild(bootIMG);
     
     for(let i = 0; i< bootList.length; i++){
         let img = document.createElement("img");
@@ -190,8 +202,13 @@ window.onload = (event) => {
         img.alt = bootList[i].name;
         img.draggable = false;
         img.onclick = (event) => {
+            bootC.removeChild(bootIMG);
             console.log("img clicked - " + img.alt);
-            armor4Click(img);
+            //armor4Click(img);
+            bootIMG.src = img.src;
+            bootIMG.alt = img.alt;
+            bootIMG.draggable = false;
+            bootC.appendChild(bootIMG);
         };
         boot.appendChild(img);
     }
