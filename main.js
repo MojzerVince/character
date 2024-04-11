@@ -19,7 +19,7 @@ console.log(divs);
 console.log(divs[1]); //indexelés
 console.log("-----");
 
-//C# foreach
+//C# szerű
 for (let item in divs) {
     console.log("NIGAAA");
     console.log(item);
@@ -32,14 +32,14 @@ for(let i = 0; i < divs.length; i++){
 
 console.log("----------");
 
-//for of
+//for of - foreach
 console.log("-----for of");
 for(let item of divs){
     console.log(item);
     item.className += " checked";
 }
 
-//for in
+//for in - összes propertyt állítja
 console.log("-----for in");
 for(let item in divs){
     console.log(item);
