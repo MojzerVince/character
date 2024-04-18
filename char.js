@@ -27,6 +27,7 @@ function weapon(item){
     let itemSRC = item.getAttribute("src");
     let weaponSlot = document.querySelector("#weaponSlot");
     weaponSlot.setAttribute("src", itemSRC);
+    weaponSlot.setAttribute("style", "display: block;");
 }
 
 //ALT solution

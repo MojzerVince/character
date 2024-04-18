@@ -67,6 +67,9 @@ form>footer>input{
     font-size: 26px;
     font-weight: bolder;
 }
+#weaponSlot{
+    display: none;
+}
 
 .window{
     display: grid;
