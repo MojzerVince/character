@@ -19,7 +19,6 @@ function armor4Click(item){
     let armor4 = document.querySelector("#armor4");
     armor4.setAttribute("src", itemSRC);
 }
-
 function noArmor(item){
     item.removeAttribute("src");
 }
@@ -122,8 +121,24 @@ const bootList = [
 /*window.addEventListener("load", (event) => {
 
 });*/
+
+const weaponDialog = document.querySelector("#weapon");
+const shieldDialog = document.querySelector("#shield");
+
+
 window.onload = (event) => {
     console.log("Niga loaded");
+
+    let weaponChooser = document.querySelector(".weapon");
+    weaponChooser.onclick = (event) => {
+        console.log("OPEN - weapon dialog");
+        weaponDialog.showModal(); //showModal beépített függvény, kinyitja a dialogot
+    }
+    let shieldChooser = document.querySelector(".shield");
+    shieldChooser.onclick = (event) => {
+        console.log("OPEN - shield dialog");
+        shieldDialog.showModal();
+    }
 
     let head = document.querySelector(".flex1");
     let headC = document.querySelector(".armor1");

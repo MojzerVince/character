@@ -121,7 +121,7 @@ div>img:hover{
     background-color: rgb(209, 209, 209);
 }
 
-.weapon1{
+.weapon{
     grid-area: weapon1;
     background-color: rgb(209, 209, 209);
 }
@@ -129,7 +129,7 @@ div>img:hover{
     grid-area: noweapon;
     display: none;
 }
-.weapon2{
+.shield{
     grid-area: weapon2;
     background-color: rgb(209, 209, 209);
 }
