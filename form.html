@@ -44,6 +44,10 @@
             let formData = new FormData(form);
             formData.append("agree", "true");
             formData.delete("gender");
+            formData.append("email", "k@rva");
+
+            //console.log(formData.get("email"));
+            console.log(formData.getAll("email"));
             console.log(formData);
         })
     </script>
