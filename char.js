@@ -23,6 +23,12 @@ function noArmor(item){
     item.removeAttribute("src");
 }
 
+function weapon(item){
+    let itemSRC = item.getAttribute("src");
+    let weaponSlot = document.querySelector("#weaponSlot");
+    weaponSlot.setAttribute("src", itemSRC);
+}
+
 //ALT solution
 const headList = [
     {
