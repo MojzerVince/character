@@ -67,7 +67,7 @@ form>footer>input{
     font-size: 26px;
     font-weight: bolder;
 }
-#weaponSlot{
+#weaponSlot, #toolSlot{
     display: none;
 }
 
@@ -186,7 +186,7 @@ div>img:hover{
     grid-area: noweapon;
     display: none;
 }
-.shield{
+.tool{
     grid-area: weapon2;
     background-color: rgb(209, 209, 209);
 }

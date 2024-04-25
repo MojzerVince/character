@@ -2,7 +2,6 @@ function armor1Click(item){
     let itemSRC = item.getAttribute("src");
     let armor1 = document.querySelector("#armor1");
     armor1.setAttribute("src", itemSRC);
-    armor1.setAttribute("draggable", false);
 }
 function armor2Click(item){
     let itemSRC = item.getAttribute("src");
@@ -28,6 +27,15 @@ function weaponClick(item){
     let weaponSlot = document.querySelector("#weaponSlot");
     weaponSlot.setAttribute("src", itemSRC);
     weaponSlot.setAttribute("style", "display: block;");
+    console.log(item.getAttribute("alt") + " selected");
+}
+
+function toolClick(item){
+    let itemSRC = item.getAttribute("src");
+    let toolSlot = document.querySelector("#toolSlot");
+    toolSlot.setAttribute("src", itemSRC);
+    toolSlot.setAttribute("style", "display: block;");
+    console.log(item.getAttribute("alt") + " selected");
 }
 
 //ALT solution
@@ -35,27 +43,22 @@ const headList = [
     {
         name: "Chain Helmet",
         img: "assets/imgs/h_c.png",
-        equipped: false
     },
     {
         name: "Leather Helmet",
         img: "assets/imgs/h_l.png",
-        equipped: false
     },
     {
         name: "Gold Helmet",
         img: "assets/imgs/h_g.png",
-        equipped: false
     },
     {
         name: "Iron Helmet",
         img: "assets/imgs/h_i.png",
-        equipped: false
     },
     {
         name: "Diamond Helmet",
         img: "assets/imgs/h_d.png",
-        equipped: false
     },
 ];
 const chestList = [
@@ -166,31 +169,74 @@ const weaponList = [
         img: "assets/imgs/i_h.png",
     },
 ];
+const toolList = [
+    {
+        name: "Shield",
+        img: "assets/imgs/shield.png",
+    },
+    {
+        name: "Totem of Undying",
+        img: "assets/imgs/totem.png",
+    },
+    {
+        name: "Enchanted Golden Apple",
+        img: "assets/imgs/golden_a.gif",
+    },
+    {
+        name: "Debug Stick",
+        img: "assets/imgs/debug_s.gif",
+    },
+    {
+        name: "Milk",
+        img: "assets/imgs/milk.png",
+    },
+    {
+        name: "Trial Key",
+        img: "assets/imgs/trial_key.png",
+    },
+];
+
+console.table(headList);
+console.table(chestList);
+console.table(trousList);
+console.table(bootList);
+console.table(weaponList);
+console.table(toolList);
     
 /*window.addEventListener("load", (event) => {
 
 });*/
 
 const weaponDialog = document.querySelector("#weapon");
-const shieldDialog = document.querySelector("#shield");
-
+const toolDialog = document.querySelector("#tool");
 
 window.onload = (event) => {
     console.log("Niga loaded");
 
     let weaponChooser = document.querySelector(".weapon");
     weaponChooser.onclick = (event) => {
-        console.log("OPEN - weapon dialog");
+        console.log("OPENED - weapon dialog");
         weaponDialog.showModal(); //showModal beépített függvény, kinyitja a dialogot
     }
-    let shieldChooser = document.querySelector(".shield");
-    shieldChooser.onclick = (event) => {
-        console.log("OPEN - shield dialog");
-        shieldDialog.showModal();
+    let toolChooser = document.querySelector(".tool");
+    toolChooser.onclick = (event) => {
+        console.log("OPENED - tool dialog");
+        toolDialog.showModal();
+    }
+
+    let tool = document.querySelector(".toolSelect");
+    for(let i = 0; i < toolList.length; i++){
+        let img = document.createElement("img");
+        img.src = toolList[i].img;
+        img.alt = toolList[i].name;
+        img.draggable = false;
+        img.onclick = (event) => {
+            toolClick(img);
+        }
+        tool.appendChild(img);
     }
 
     let weapon = document.querySelector(".weaponSelect")
-    //let weaponIMG = document.createElement("img");
     for(let i = 0; i < weaponList.length; i++){
         let img = document.createElement("img");
         img.src = weaponList[i].img;
@@ -199,7 +245,7 @@ window.onload = (event) => {
         img.onclick = (event) => {
             weaponClick(img);
         }
-    weapon.appendChild(img);
+        weapon.appendChild(img);
     }
 
     let head = document.querySelector(".flex1");
