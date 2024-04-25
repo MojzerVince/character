@@ -23,7 +23,7 @@ function noArmor(item){
     item.removeAttribute("src");
 }
 
-function weapon(item){
+function weaponClick(item){
     let itemSRC = item.getAttribute("src");
     let weaponSlot = document.querySelector("#weaponSlot");
     weaponSlot.setAttribute("src", itemSRC);
@@ -124,7 +124,49 @@ const bootList = [
         img: "assets/imgs/s_d.png",
     },
 ];
-
+const weaponList = [
+    {
+        name: "Diamond Axe",
+        img: "assets/imgs/d_a.png",
+    },
+    {
+        name: "Diamond Sword",
+        img: "assets/imgs/d_sw.png",
+    },
+    {
+        name: "Diamond Shovel",
+        img: "assets/imgs/d_s.png",
+    },
+    {
+        name: "Diamond Pickaxe",
+        img: "assets/imgs/d_p.png",
+    },
+    {
+        name: "Diamond Hoe",
+        img: "assets/imgs/d_h.png",
+    },
+    {
+        name: "Iron Axe",
+        img: "assets/imgs/i_a.png",
+    },
+    {
+        name: "Iron Sword",
+        img: "assets/imgs/i_sw.png",
+    },
+    {
+        name: "Iron Shovel",
+        img: "assets/imgs/i_s.png",
+    },
+    {
+        name: "Iron Pickaxe",
+        img: "assets/imgs/i_p.png",
+    },
+    {
+        name: "Iron Hoe",
+        img: "assets/imgs/i_h.png",
+    },
+];
+    
 /*window.addEventListener("load", (event) => {
 
 });*/
@@ -145,6 +187,19 @@ window.onload = (event) => {
     shieldChooser.onclick = (event) => {
         console.log("OPEN - shield dialog");
         shieldDialog.showModal();
+    }
+
+    let weapon = document.querySelector(".weaponSelect")
+    //let weaponIMG = document.createElement("img");
+    for(let i = 0; i < weaponList.length; i++){
+        let img = document.createElement("img");
+        img.src = weaponList[i].img;
+        img.alt = weaponList[i].name;
+        img.draggable = false;
+        img.onclick = (event) => {
+            weaponClick(img);
+        }
+    weapon.appendChild(img);
     }
 
     let head = document.querySelector(".flex1");
