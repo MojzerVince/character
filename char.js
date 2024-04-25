@@ -63,23 +63,23 @@ const headList = [
 ];
 const chestList = [
     {
-        name: "Chain Chest",
+        name: "Chain Chestplate",
         img: "assets/imgs/c_c.png",
     },
     {
-        name: "Leather Chest",
+        name: "Leather Chestplate",
         img: "assets/imgs/c_l.png",
     },
     {
-        name: "Gold Chest",
+        name: "Gold Chestplate",
         img: "assets/imgs/c_g.png",
     },
     {
-        name: "Iron Chest",
+        name: "Iron Chestplate",
         img: "assets/imgs/c_i.png",
     },
     {
-        name: "Diamond Chest",
+        name: "Diamond Chestplate",
         img: "assets/imgs/c_d.png",
     },
 ];
@@ -128,6 +128,26 @@ const bootList = [
     },
 ];
 const weaponList = [
+    {
+        name: "Netherite Axe",
+        img: "assets/imgs/n_a.png",
+    },
+    {
+        name: "Netherite Sword",
+        img: "assets/imgs/n_sw.png",
+    },
+    {
+        name: "Netherite Shovel",
+        img: "assets/imgs/n_s.png",
+    },
+    {
+        name: "Netherite Pickaxe",
+        img: "assets/imgs/n_a.png",
+    },
+    {
+        name: "Netherite Hoe",
+        img: "assets/imgs/n_h.png",
+    },
     {
         name: "Diamond Axe",
         img: "assets/imgs/d_a.png",
@@ -183,6 +203,10 @@ const toolList = [
         img: "assets/imgs/golden_a.gif",
     },
     {
+        name: "Golden Carrot",
+        img: "assets/imgs/golden_c.png",
+    },
+    {
         name: "Debug Stick",
         img: "assets/imgs/debug_s.gif",
     },
@@ -193,6 +217,14 @@ const toolList = [
     {
         name: "Trial Key",
         img: "assets/imgs/trial_key.png",
+    },
+    {
+        name: "Fire Ball",
+        img: "assets/imgs/fireball.webp",
+    },
+    {
+        name: "Fishing Rod",
+        img: "assets/imgs/f_rod.png",
     },
 ];
 

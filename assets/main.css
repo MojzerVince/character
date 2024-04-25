@@ -40,7 +40,7 @@ dialog{
 dialog>form>section{
     display: grid;
     grid-template-columns: repeat(5, 60px);
-    grid-template-rows: repeat(2, 60px);
+    grid-template-rows: auto;
 
     gap: 5px;
 }
