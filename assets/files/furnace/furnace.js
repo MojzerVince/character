@@ -30,31 +30,31 @@ const foodList = [
         id: 0,
         name: "Raw Beef",
         gonnabe: "Steak",
-        img: "assets/imgs/furnace/raw_beef.png",
+        img: "../../../assets/imgs/furnace/raw_beef.png",
         cooked_name: "Steak",
-        cooked_img: "assets/imgs/furnace/steak.png",
+        cooked_img: "../../../assets/imgs/furnace/steak.png",
     },
     {
         id: 1,
         name: "Raw Rabbit",
         gonnabe: "Cooked Rabbit",
-        img: "assets/imgs/furnace/raw_rabbit.png",
+        img: "../../../assets/imgs/furnace/raw_rabbit.png",
         cooked_name: "Cooked Rabbit",
-        cooked_img: "assets/imgs/furnace/cooked_rabbit.png",
+        cooked_img: "../../../assets/imgs/furnace/cooked_rabbit.png",
     },
 ];
 const fuelList = [
     {
         id: 0,
         name: "Coal",
-        img: "assets/imgs/furnace/coal.png",
+        img: "../../../assets/imgs/furnace/coal.png",
         fuel: 3,
 
     },
     {
         id: 1,
         name: "Lava Bucket",
-        img: "assets/imgs/furnace/lava_bucket.png",
+        img: "../../../assets/imgs/furnace/lava_bucket.png",
         fuel: 64,
     },
 ];

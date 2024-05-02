@@ -47,7 +47,6 @@ function weaponClick(item){
     weaponSlot.setAttribute("style", "display: block;");
     console.log(item.getAttribute("alt") + " selected");
 }
-
 function toolClick(item){
     let itemSRC = item.getAttribute("src");
     let itemALT = item.getAttribute("alt");
@@ -62,189 +61,189 @@ function toolClick(item){
 const headList = [
     {
         name: "Chain Helmet",
-        img: "assets/imgs/h_c.png",
+        img: "assets/imgs/inventory/helmets/h_c.png",
     },
     {
         name: "Leather Helmet",
-        img: "assets/imgs/h_l.png",
+        img: "assets/imgs/inventory/helmets/h_l.png",
     },
     {
         name: "Gold Helmet",
-        img: "assets/imgs/h_g.png",
+        img: "assets/imgs/inventory/helmets/h_g.png",
     },
     {
         name: "Iron Helmet",
-        img: "assets/imgs/h_i.png",
+        img: "assets/imgs/inventory/helmets/h_i.png",
     },
     {
         name: "Diamond Helmet",
-        img: "assets/imgs/h_d.png",
+        img: "assets/imgs/inventory/helmets/h_d.png",
     },
 ];
 const chestList = [
     {
         name: "Chain Chestplate",
-        img: "assets/imgs/c_c.png",
+        img: "assets/imgs/inventory/chestplates/c_c.png",
     },
     {
         name: "Leather Chestplate",
-        img: "assets/imgs/c_l.png",
+        img: "assets/imgs/inventory/chestplates/c_l.png",
     },
     {
         name: "Gold Chestplate",
-        img: "assets/imgs/c_g.png",
+        img: "assets/imgs/inventory/chestplates/c_g.png",
     },
     {
         name: "Iron Chestplate",
-        img: "assets/imgs/c_i.png",
+        img: "assets/imgs/inventory/chestplates/c_i.png",
     },
     {
         name: "Diamond Chestplate",
-        img: "assets/imgs/c_d.png",
+        img: "assets/imgs/inventory/chestplates/c_d.png",
     },
 ];
 const trousList = [
     {
         name: "Chain Trouser",
-        img: "assets/imgs/t_c.png",
+        img: "assets/imgs/inventory/leggings/t_c.png",
     },
     {
         name: "Leather Trouser",
-        img: "assets/imgs/t_l.png",
+        img: "assets/imgs/inventory/leggings/t_l.png",
     },
     {
         name: "Gold Trouser",
-        img: "assets/imgs/t_g.png",
+        img: "assets/imgs/inventory/leggings/t_g.png",
     },
     {
         name: "Iron Trouser",
-        img: "assets/imgs/t_i.png",
+        img: "assets/imgs/inventory/leggings/t_i.png",
     },
     {
         name: "Diamond Trouser",
-        img: "assets/imgs/t_d.png",
+        img: "assets/imgs/inventory/leggings/t_d.png",
     },
 ];
 const bootList = [
     {
         name: "Chain Boots",
-        img: "assets/imgs/s_c.png",
+        img: "assets/imgs/inventory/shoes/s_c.png",
     },
     {
         name: "Leather Boots",
-        img: "assets/imgs/s_l.png",
+        img: "assets/imgs/inventory/shoes/s_l.png",
     },
     {
         name: "Gold Boots",
-        img: "assets/imgs/s_g.png",
+        img: "assets/imgs/inventory/shoes/s_g.png",
     },
     {
         name: "Iron Boots",
-        img: "assets/imgs/s_i.png",
+        img: "assets/imgs/inventory/shoes/s_i.png",
     },
     {
         name: "Diamond Boots",
-        img: "assets/imgs/s_d.png",
+        img: "assets/imgs/inventory/shoes/s_d.png",
     },
 ];
 const weaponList = [
     {
         name: "Netherite Axe",
-        img: "assets/imgs/n_a.png",
+        img: "assets/imgs/inventory/weapons/netherite/n_a.png",
     },
     {
         name: "Netherite Sword",
-        img: "assets/imgs/n_sw.png",
+        img: "assets/imgs/inventory/weapons/netherite/n_sw.png",
     },
     {
         name: "Netherite Shovel",
-        img: "assets/imgs/n_s.png",
+        img: "assets/imgs/inventory/weapons/netherite/n_s.png",
     },
     {
         name: "Netherite Pickaxe",
-        img: "assets/imgs/n_a.png",
+        img: "assets/imgs/inventory/weapons/netherite/n_a.png",
     },
     {
         name: "Netherite Hoe",
-        img: "assets/imgs/n_h.png",
+        img: "assets/imgs/inventory/weapons/netherite/n_h.png",
     },
     {
         name: "Diamond Axe",
-        img: "assets/imgs/d_a.png",
+        img: "assets/imgs/inventory/weapons/diamond/d_a.png",
     },
     {
         name: "Diamond Sword",
-        img: "assets/imgs/d_sw.png",
+        img: "assets/imgs/inventory/weapons/diamond/d_sw.png",
     },
     {
         name: "Diamond Shovel",
-        img: "assets/imgs/d_s.png",
+        img: "assets/imgs/inventory/weapons/diamond/d_s.png",
     },
     {
         name: "Diamond Pickaxe",
-        img: "assets/imgs/d_p.png",
+        img: "assets/imgs/inventory/weapons/diamond/d_p.png",
     },
     {
         name: "Diamond Hoe",
-        img: "assets/imgs/d_h.png",
+        img: "assets/imgs/inventory/weapons/diamond/d_h.png",
     },
     {
         name: "Iron Axe",
-        img: "assets/imgs/i_a.png",
+        img: "assets/imgs/inventory/weapons/iron/i_a.png",
     },
     {
         name: "Iron Sword",
-        img: "assets/imgs/i_sw.png",
+        img: "assets/imgs/inventory/weapons/iron/i_sw.png",
     },
     {
         name: "Iron Shovel",
-        img: "assets/imgs/i_s.png",
+        img: "assets/imgs/inventory/weapons/iron/i_s.png",
     },
     {
         name: "Iron Pickaxe",
-        img: "assets/imgs/i_p.png",
+        img: "assets/imgs/inventory/weapons/iron/i_p.png",
     },
     {
         name: "Iron Hoe",
-        img: "assets/imgs/i_h.png",
+        img: "assets/imgs/inventory/weapons/iron/i_h.png",
     },
 ];
 const toolList = [
     {
         name: "Shield",
-        img: "assets/imgs/shield.png",
+        img: "assets/imgs/inventory/tools/shield.png",
     },
     {
         name: "Totem of Undying",
-        img: "assets/imgs/totem.png",
+        img: "assets/imgs/inventory/tools/totem.png",
     },
     {
         name: "Enchanted Golden Apple",
-        img: "assets/imgs/golden_a.gif",
+        img: "assets/imgs/inventory/tools/golden_a.gif",
     },
     {
         name: "Golden Carrot",
-        img: "assets/imgs/golden_c.png",
+        img: "assets/imgs/inventory/tools/golden_c.png",
     },
     {
         name: "Debug Stick",
-        img: "assets/imgs/debug_s.gif",
+        img: "assets/imgs/inventory/tools/debug_s.gif",
     },
     {
         name: "Milk",
-        img: "assets/imgs/milk.png",
+        img: "assets/imgs/inventory/tools/milk.png",
     },
     {
         name: "Trial Key",
-        img: "assets/imgs/trial_key.png",
+        img: "assets/imgs/inventory/tools/trial_key.png",
     },
     {
         name: "Fire Ball",
-        img: "assets/imgs/fireball.webp",
+        img: "assets/imgs/inventory/tools/fireball.webp",
     },
     {
         name: "Fishing Rod",
-        img: "assets/imgs/f_rod.png",
+        img: "assets/imgs/inventory/tools/f_rod.png",
     },
 ];
 
