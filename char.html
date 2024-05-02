@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Character</title>
-
     <link rel="stylesheet" href="assets/main.css" type="text/css">
 </head>
 
@@ -41,26 +40,26 @@
         </div>
 
         <div class="armor1">
-            <img src="" alt="helmet" draggable="false" id="armor1" onclick="noArmor(this)">
+            <img src="#" alt="helmet" draggable="false" id="armor1" onclick="noArmor(this)">
         </div>
         <div class="armor2">
-            <img src="" alt="chestplate" draggable="false" id="armor2" onclick="noArmor(this)">
+            <img src="#" alt="chestplate" draggable="false" id="armor2" onclick="noArmor(this)">
         </div>
         <div class="armor3">
-            <img src="" alt="leggings" draggable="false" id="armor3" onclick="noArmor(this)">
+            <img src="#" alt="leggings" draggable="false" id="armor3" onclick="noArmor(this)">
         </div>
         <div class="armor4">
-            <img src="" alt="shoes" draggable="false" id="armor4" onclick="noArmor(this)">
+            <img src="#" alt="shoes" draggable="false" id="armor4" onclick="noArmor(this)">
         </div>
 
         <div class="nothing"></div>
 
         <div class="weapon">
-            <img src="" alt="weapon" draggable="false" id="weaponSlot">
+            <img src="#" alt="weapon" draggable="false" id="weaponSlot">
         </div>
         <div class="noweapon"></div>
         <div class="tool">
-            <img src="" alt="tool" draggable="false" id="toolSlot">
+            <img src="#" alt="tool" draggable="false" id="toolSlot">
         </div>
     </div>
     <dialog id="weapon">
@@ -68,14 +67,14 @@
             <header>
                 <h1>Weapon Chooser</h1>
             </header>
-            <section class="weaponSelect">
+            <div class="weaponSelect">
                 <!--
                 <img src="assets/imgs/d_a.svg" alt="AXE" draggable="false" onclick="weaponClick(this)">
                 <img src="assets/imgs/d_sw.svg" alt="SWORD" draggable="false" onclick="weaponClick(this)">
                 <img src="assets/imgs/d_s.svg" alt="SHOVEL" draggable="false" onclick="weaponClick(this)">
                 <img src="assets/imgs/d_p.svg" alt="PICKAXE" draggable="false" onclick="weaponClick(this)">
                 -->
-            </section>
+            </div>
             <footer>
                 <input type="submit" value="Close" onclick="console.log('CLOSED - weapon dialog')">
             </footer>
@@ -86,9 +85,9 @@
             <header>
                 <h1>Tool Chooser</h1>
             </header>
-            <section class="toolSelect">
+            <div class="toolSelect">
                 <!--<img src="assets/imgs/shield.png" alt="SHIELD" onclick="toolClick(this)">-->
-            </section>
+            </div>
             <footer>
                 <input type="submit" value="Close" onclick="console.log('CLOSED - tool dialog')">
             </footer>

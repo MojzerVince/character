@@ -37,14 +37,14 @@ dialog{
     background-color: lightgrey;
     outline: 0;
 }
-dialog>form>section{
+dialog>form>div{
     display: grid;
     grid-template-columns: repeat(5, 60px);
     grid-template-rows: auto;
 
     gap: 5px;
 }
-dialog>form>section>img{
+dialog>form>div>img{
     width: 60px;
     height: 60px;
     background-color: grey;
