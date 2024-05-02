@@ -8,15 +8,41 @@
 </head>
 <body>
     <div class="window">
-        <div class="foodSlot">
-
+        <div class="rawFoodSlot">
+            <img src="#" alt="raw food" gonnabe="#" draggable="false" id="rawFoodSlot">
         </div>
         <div class="cookedSlot">
-
+            <img src="#" alt="cooked" draggable="false" id="cookedSlot" onclick="noFood(this)" style="display: none;">
+            <p class="cookedCount"></p>
         </div>
         <div class="fuelSlot">
-
+            <img src="#" alt="fuel" draggable="false" id="fuelSlot">
+            <p class="fuelCount"></p>
         </div>
     </div>
+
+    <dialog id="rawFood">
+        <form method="dialog">
+            <header>
+                <h1>Raw Food Chooser</h1>
+            </header>
+            <div class="rawFoodSelect"></div>
+            <footer>
+                <input type="submit" value="Close" onclick="console.log('CLOSED - raw food dialog')">
+            </footer>
+        </form>
+    </dialog>
+    <dialog id="fuel">
+        <form method="dialog">
+            <header>
+                <h1>Fuel Chooser</h1>
+            </header>
+            <div class="fuelSelect"></div>
+            <footer>
+                <input type="submit" value="Close" onclick="console.log('CLOSED - fuel dialog')">
+            </footer>
+        </form>
+    </dialog>
+    <script src="furnace.js"></script>
 </body>
 </html>

@@ -161,7 +161,7 @@ div>img:hover{
     background-color: rgb(230, 230, 230);
 }
 
-.armor1, .foodSlot{
+.armor1, .rawFoodSlot{
     grid-area: armor1;
     background-color: rgb(209, 209, 209);
 }
