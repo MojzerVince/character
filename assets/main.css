@@ -161,7 +161,7 @@ div>img:hover{
     background-color: rgb(230, 230, 230);
 }
 
-.armor1{
+.armor1, .foodSlot{
     grid-area: armor1;
     background-color: rgb(209, 209, 209);
 }
@@ -169,7 +169,7 @@ div>img:hover{
     grid-area: armor2;
     background-color: rgb(209, 209, 209);
 }
-.armor3{
+.armor3, .fuelSlot{
     grid-area: armor3;
     background-color: rgb(209, 209, 209);
 }
@@ -178,7 +178,7 @@ div>img:hover{
     background-color: rgb(209, 209, 209);
 }
 
-.weapon{
+.weapon, .cookedSlot{
     grid-area: weapon1;
     background-color: rgb(209, 209, 209);
 }
