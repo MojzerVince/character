@@ -1,25 +1,41 @@
 function armor1Click(item){
     let itemSRC = item.getAttribute("src");
+    let itemALT = item.getAttribute("alt");
     let armor1 = document.querySelector("#armor1");
     armor1.setAttribute("src", itemSRC);
+    armor1.setAttribute("alt", itemALT);
+    armor1.setAttribute("style", "display: block;");
+    console.log(item.getAttribute("alt") + " selected");
 }
 function armor2Click(item){
     let itemSRC = item.getAttribute("src");
+    let itemALT = item.getAttribute("alt");
     let armor2 = document.querySelector("#armor2");
     armor2.setAttribute("src", itemSRC);
+    armor2.setAttribute("alt", itemALT);
+    armor2.setAttribute("style", "display: block;");
+    console.log(item.getAttribute("alt") + " selected");
 }
 function armor3Click(item){
     let itemSRC = item.getAttribute("src");
+    let itemALT = item.getAttribute("alt");
     let armor3 = document.querySelector("#armor3");
     armor3.setAttribute("src", itemSRC);
+    armor3.setAttribute("alt", itemALT);
+    armor3.setAttribute("style", "display: block;");
+    console.log(item.getAttribute("alt") + " selected");
 }
 function armor4Click(item){
     let itemSRC = item.getAttribute("src");
+    let itemALT = item.getAttribute("alt");
     let armor4 = document.querySelector("#armor4");
     armor4.setAttribute("src", itemSRC);
+    armor4.setAttribute("alt", itemALT);
+    armor4.setAttribute("style", "display: block;");
+    console.log(item.getAttribute("alt") + " selected");
 }
 function noArmor(item){
-    item.removeAttribute("src");
+    item.setAttribute("style", "display: none;");
 }
 
 function weaponClick(item){
@@ -285,9 +301,6 @@ window.onload = (event) => {
     }
 
     let head = document.querySelector(".flex1");
-    let headC = document.querySelector(".armor1");
-    let headIMG = document.createElement("img");
-    headC.appendChild(headIMG);
     
     for(let i = 0; i< headList.length; i++){
         let img = document.createElement("img");
@@ -295,21 +308,18 @@ window.onload = (event) => {
         img.alt = headList[i].name;
         img.draggable = false;
         img.onclick = (event) => {
-            headC.removeChild(headIMG);
-            console.log("img clicked - " + img.alt);
-            //armor1Click(img);
-            headIMG.src = img.src;
+            /*headC.removeChild(headIMG);
+            console.log("img clicked - " + img.alt);*/
+            armor1Click(img);
+            /*headIMG.src = img.src;
             headIMG.alt = img.alt;
             headIMG.draggable = false;
-            headC.appendChild(headIMG);
+            headC.appendChild(headIMG);*/
         };
         head.appendChild(img);
     }
     //---------------
     let chest = document.querySelector(".flex2");
-    let chestC = document.querySelector(".armor2");
-    let chestIMG = document.createElement("img");
-    chestC.appendChild(chestIMG);
     
     for(let i = 0; i< chestList.length; i++){
         let img = document.createElement("img");
@@ -317,21 +327,18 @@ window.onload = (event) => {
         img.alt = chestList[i].name;
         img.draggable = false;
         img.onclick = (event) => {
-            chestC.removeChild(chestIMG);
-            console.log("img clicked - " + img.alt);
-            //armor2Click(img);
-            chestIMG.src = img.src;
+            /*chestC.removeChild(chestIMG);
+            console.log("img clicked - " + img.alt);*/
+            armor2Click(img);
+            /*chestIMG.src = img.src;
             chestIMG.alt = img.alt;
             chestIMG.draggable = false;
-            chestC.appendChild(chestIMG);
+            chestC.appendChild(chestIMG);*/
         };
         chest.appendChild(img);
     }
     //---------------
     let trous = document.querySelector(".flex3");
-    let trousC = document.querySelector(".armor3");
-    let trousIMG = document.createElement("img");
-    trousC.appendChild(trousIMG);
     
     for(let i = 0; i< trousList.length; i++){
         let img = document.createElement("img");
@@ -339,21 +346,18 @@ window.onload = (event) => {
         img.alt = trousList[i].name;
         img.draggable = false;
         img.onclick = (event) => {
-            trousC.removeChild(trousIMG);
-            console.log("img clicked - " + img.alt);
-            //armor3Click(img);
-            trousIMG.src = img.src;
+            /*trousC.removeChild(trousIMG);
+            console.log("img clicked - " + img.alt);*/
+            armor3Click(img);
+            /*trousIMG.src = img.src;
             trousIMG.alt = img.alt;
             trousIMG.draggable = false;
-            trousC.appendChild(trousIMG);
+            trousC.appendChild(trousIMG);*/
         };
         trous.appendChild(img);
     }
     //---------------
     let boot = document.querySelector(".flex4");
-    let bootC = document.querySelector(".armor4");
-    let bootIMG = document.createElement("img");
-    bootC.appendChild(bootIMG);
     
     for(let i = 0; i< bootList.length; i++){
         let img = document.createElement("img");
@@ -361,13 +365,13 @@ window.onload = (event) => {
         img.alt = bootList[i].name;
         img.draggable = false;
         img.onclick = (event) => {
-            bootC.removeChild(bootIMG);
-            console.log("img clicked - " + img.alt);
-            //armor4Click(img);
-            bootIMG.src = img.src;
+            /*bootC.removeChild(bootIMG);
+            console.log("img clicked - " + img.alt);*/
+            armor4Click(img);
+            /*bootIMG.src = img.src;
             bootIMG.alt = img.alt;
             bootIMG.draggable = false;
-            bootC.appendChild(bootIMG);
+            bootC.appendChild(bootIMG);*/
         };
         boot.appendChild(img);
     }
