@@ -95,6 +95,20 @@ async function Cooker() {
             CheckForFuel(fuelLeft);
             foodCooked = true;
         }
+        else if(cooked_img.getAttribute("alt") == foodList[foodID].gonnabe){
+            await Sleep(2000);
+            cooked_img.setAttribute("src", foodList[foodID].cooked_img);
+            cooked_img.setAttribute("alt", foodList[foodID].cooked_name);
+            cooked_img.setAttribute("style", "display: block;");
+            isFood.style = "display: none;";
+            isFood.alt = "raw food";
+            fuelLeft -= 1;
+            cooked++;
+            fuelCount.innerHTML = fuelLeft;
+            cookedCount.innerHTML = cooked;
+            CheckForFuel(fuelLeft);
+            foodCooked = true;
+        }
     }
 }
 
