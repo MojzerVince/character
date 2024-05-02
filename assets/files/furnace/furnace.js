@@ -19,10 +19,10 @@ function fuelClick(item) {
 }
 function noFood(item) {
     item.setAttribute("style", "display: none;");
+    console.log(cooked + " " + item.getAttribute("alt") + " removed");
     foodCooked = false;
     cooked = 0;
     Cooker();
-    console.log(item.getAttribute("alt") + " removed");
 }
 
 const foodList = [
@@ -80,7 +80,7 @@ async function Cooker() {
         let cooked_img = document.querySelector("#cookedSlot");
         fuelCount.innerHTML = fuelLeft;
         cookedCount.innerHTML = cooked;
-        console.log((cooked_img.getAttribute("alt") == isFood.getAttribute("gonnabe")) + " niga");
+        //console.log((cooked_img.getAttribute("alt") == isFood.getAttribute("gonnabe")) + " niga");
         if(foodCooked == false && fuelLeft > 0){
             await Sleep(2000);
             cooked_img.setAttribute("src", foodList[foodID].cooked_img);
@@ -88,7 +88,7 @@ async function Cooker() {
             cooked_img.setAttribute("style", "display: block;");
             isFood.style = "display: none;";
             isFood.alt = "raw food";
-            fuelLeft -= 1;
+            fuelLeft--;;
             cooked++;
             fuelCount.innerHTML = fuelLeft;
             cookedCount.innerHTML = cooked;
@@ -142,7 +142,7 @@ window.onload = (event) => {
         img.draggable = false;
         img.onclick = (event) => {
             rawFoodClick(img);
-            console.log(img.gonnabe);
+            //console.log(img.gonnabe);
             foodID = foodList[i].id;
             Cooker();
         }

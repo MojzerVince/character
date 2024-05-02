@@ -67,7 +67,7 @@ form>footer>input{
     font-size: 26px;
     font-weight: bolder;
 }
-#weaponSlot, #toolSlot, #armor1, #armor2, #armor3, #armor4{
+#weaponSlot, #toolSlot, #armor1, #armor2, #armor3, #armor4, #rawFoodSlot, #fuelSlot, #cookedSlot{
     display: none;
 }
 
