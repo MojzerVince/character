@@ -24,16 +24,20 @@ function noArmor(item){
 
 function weaponClick(item){
     let itemSRC = item.getAttribute("src");
+    let itemALT = item.getAttribute("alt");
     let weaponSlot = document.querySelector("#weaponSlot");
     weaponSlot.setAttribute("src", itemSRC);
+    weaponSlot.setAttribute("alt", itemALT);
     weaponSlot.setAttribute("style", "display: block;");
     console.log(item.getAttribute("alt") + " selected");
 }
 
 function toolClick(item){
     let itemSRC = item.getAttribute("src");
+    let itemALT = item.getAttribute("alt");
     let toolSlot = document.querySelector("#toolSlot");
     toolSlot.setAttribute("src", itemSRC);
+    toolSlot.setAttribute("alt", itemALT);
     toolSlot.setAttribute("style", "display: block;");
     console.log(item.getAttribute("alt") + " selected");
 }
